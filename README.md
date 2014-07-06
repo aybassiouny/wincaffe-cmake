@@ -1,6 +1,6 @@
 # Windows CMAKE build for CAFFE
 
-This is not the direct output of BVLC/caffe#573 , but it is pretty close. Let me know how easy is it to compile. 
+This is not the direct output of [#573](https://github.com/BVLC/caffe/pull/573), but it is pretty close. Let me know how easy is it to compile. 
 
 #### Prerequisites
 You may need the followings to build the code:
@@ -11,7 +11,7 @@ You may need the followings to build the code:
 - Other dependencies which you can directly download from [here](http://dl.dropboxusercontent.com/u/3466743/caffe-vs2012/dependency-20140624.7z).
 
 #### Running steps: 
-- Download @niuzhiheng 's dependcies from [here](https://dl.dropboxusercontent.com/u/3466743/caffe-vs2012/dependency.7z), extract them into caffe folder. The folder "3rdparty" should be in caffe root dir. 
+- Download [niuzhiheng](https://github.com/niuzhiheng)'s dependcies from [here](https://dl.dropboxusercontent.com/u/3466743/caffe-vs2012/dependency.7z), extract them into caffe folder. The folder "3rdparty" should be in caffe root dir. 
 - Define the following environment variables: 
 MATLAB_ROOT: e.g. C:\Program Files\MATLAB\R2013a
 CUDA_DIR: e.g. C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5
