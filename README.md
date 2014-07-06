@@ -13,9 +13,9 @@ You may need the followings to build the code:
 #### Running steps: 
 - Download [niuzhiheng](https://github.com/niuzhiheng)'s dependcies from [here](https://dl.dropboxusercontent.com/u/3466743/caffe-vs2012/dependency.7z), extract them into caffe folder. The folder "3rdparty" should be in caffe root dir. 
 - Define the following environment variables: 
-MATLAB_ROOT: e.g. C:\Program Files\MATLAB\R2013a
-CUDA_DIR: e.g. C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5
-HDF5_DIR: e.g. C:\Program Files\HDF Group\HDF5\1.8.9 (get it from here)
+	- MATLAB_ROOT: e.g. C:\Program Files\MATLAB\R2013a
+	- CUDA_DIR: e.g. C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5
+	- HDF5_DIR: e.g. C:\Program Files\HDF Group\HDF5\1.8.9 (get it from here)
 - Open the solution file in `build-final/Caffe.sln` and build the solution. EXEs should be Tools/Release
 
 Please let me know of found issues. 
