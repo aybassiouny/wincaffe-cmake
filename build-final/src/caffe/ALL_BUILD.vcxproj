@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{628F370E-6406-4304-8131-01C725686568}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/include;C:/Program Files/HDF Group/HDF5/1.8.9/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include/opencv;C:/Users/t-ahmeb/Downloads/kkowalczyk-leveldb-6f9f0bca2016/kkowalczyk-leveldb-6f9f0bca2016/include;C:/local/boost_1_55_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/include;C:/Program Files/HDF Group/HDF5/1.8.9/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include/opencv;C:/Users/t-ahmeb/Downloads/kkowalczyk-leveldb-6f9f0bca2016/kkowalczyk-leveldb-6f9f0bca2016/include;C:/local/boost_1_55_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/include;C:/Program Files/HDF Group/HDF5/1.8.9/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include/opencv;C:/Users/t-ahmeb/Downloads/kkowalczyk-leveldb-6f9f0bca2016/kkowalczyk-leveldb-6f9f0bca2016/include;C:/local/boost_1_55_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/include;C:/Program Files/HDF Group/HDF5/1.8.9/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include/opencv;C:/Users/t-ahmeb/Downloads/kkowalczyk-leveldb-6f9f0bca2016/kkowalczyk-leveldb-6f9f0bca2016/include;C:/local/boost_1_55_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\src\caffe\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src/caffe/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake -BC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final --check-stamp-file C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src/caffe/CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\CMakeLists.txt;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFiles.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\CMakeScripts\FindGlog.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\CMakeScripts\FindAtlas.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindHDF5.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\SelectLibraryConfigurations.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\hdf5\hdf5-config-version.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\hdf5\hdf5-config.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\ZLIB\ZLIB-targets.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\ZLIB\ZLIB-targets-release.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\SZIP\SZIP-targets.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\SZIP\SZIP-targets-release.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\hdf5\hdf5-targets.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\hdf5\hdf5-targets-release.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\3rdparty\lib\OpenCVConfig.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\3rdparty\lib\OpenCVModules.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\3rdparty\lib\OpenCVModules-debug.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\3rdparty\lib\OpenCVModules-release.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\CMakeScripts\FindLevelDB.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindBoost.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_bnll_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_concat_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_conv_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_data_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_dropout_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_eltwise_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_flatten_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_hdf5_data_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_hdf5_output_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_im2col_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_image_data_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_inner_product_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_lrn_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_pooling_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_power_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_relu_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_sigmoid_cross_entropy_loss_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_sigmoid_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_softmax_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_softmax_loss_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_split_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_tanh_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_threshold_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_window_data_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\util\caffe_cu_generated_im2col.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\util\caffe_cu_generated_math_functions.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src/caffe/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake -BC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final --check-stamp-file C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src/caffe/CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\CMakeLists.txt;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFiles.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\CMakeScripts\FindGlog.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\CMakeScripts\FindAtlas.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindHDF5.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\SelectLibraryConfigurations.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\hdf5\hdf5-config-version.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\hdf5\hdf5-config.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\ZLIB\ZLIB-targets.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\ZLIB\ZLIB-targets-release.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\SZIP\SZIP-targets.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\SZIP\SZIP-targets-release.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\hdf5\hdf5-targets.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\hdf5\hdf5-targets-release.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\3rdparty\lib\OpenCVConfig.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\3rdparty\lib\OpenCVModules.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\3rdparty\lib\OpenCVModules-debug.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\3rdparty\lib\OpenCVModules-release.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\CMakeScripts\FindLevelDB.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindBoost.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_bnll_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_concat_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_conv_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_data_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_dropout_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_eltwise_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_flatten_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_hdf5_data_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_hdf5_output_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_im2col_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_image_data_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_inner_product_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_lrn_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_pooling_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_power_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_relu_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_sigmoid_cross_entropy_loss_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_sigmoid_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_softmax_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_softmax_loss_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_split_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_tanh_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_threshold_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_window_data_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\util\caffe_cu_generated_im2col.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\util\caffe_cu_generated_math_functions.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src/caffe/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake -BC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final --check-stamp-file C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src/caffe/CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\CMakeLists.txt;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFiles.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\CMakeScripts\FindGlog.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\CMakeScripts\FindAtlas.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindHDF5.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\SelectLibraryConfigurations.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\hdf5\hdf5-config-version.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\hdf5\hdf5-config.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\ZLIB\ZLIB-targets.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\ZLIB\ZLIB-targets-release.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\SZIP\SZIP-targets.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\SZIP\SZIP-targets-release.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\hdf5\hdf5-targets.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\hdf5\hdf5-targets-release.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\3rdparty\lib\OpenCVConfig.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\3rdparty\lib\OpenCVModules.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\3rdparty\lib\OpenCVModules-debug.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\3rdparty\lib\OpenCVModules-release.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\CMakeScripts\FindLevelDB.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindBoost.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_bnll_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_concat_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_conv_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_data_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_dropout_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_eltwise_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_flatten_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_hdf5_data_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_hdf5_output_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_im2col_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_image_data_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_inner_product_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_lrn_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_pooling_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_power_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_relu_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_sigmoid_cross_entropy_loss_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_sigmoid_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_softmax_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_softmax_loss_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_split_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_tanh_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_threshold_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_window_data_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\util\caffe_cu_generated_im2col.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\util\caffe_cu_generated_math_functions.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src/caffe/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake -BC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final --check-stamp-file C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src/caffe/CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\CMakeLists.txt;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckIncludeFiles.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\CMakeScripts\FindGlog.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\CMakeScripts\FindAtlas.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindHDF5.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\SelectLibraryConfigurations.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\hdf5\hdf5-config-version.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\hdf5\hdf5-config.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\ZLIB\ZLIB-targets.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\ZLIB\ZLIB-targets-release.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\SZIP\SZIP-targets.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\SZIP\SZIP-targets-release.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\hdf5\hdf5-targets.cmake;C:\Program Files\HDF Group\HDF5\1.8.9\share\cmake\hdf5\hdf5-targets-release.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\3rdparty\lib\OpenCVConfig.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\3rdparty\lib\OpenCVModules.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\3rdparty\lib\OpenCVModules-debug.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\3rdparty\lib\OpenCVModules-release.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\CMakeScripts\FindLevelDB.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindBoost.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_bnll_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_concat_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_conv_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_data_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_dropout_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_eltwise_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_flatten_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_hdf5_data_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_hdf5_output_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_im2col_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_image_data_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_inner_product_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_lrn_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_pooling_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_power_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_relu_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_sigmoid_cross_entropy_loss_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_sigmoid_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_softmax_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_softmax_loss_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_split_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_tanh_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_threshold_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\layers\caffe_cu_generated_window_data_layer.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\util\caffe_cu_generated_im2col.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\caffe_cu.dir\util\caffe_cu_generated_math_functions.cu.obj.depend;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindCUDA\run_nvcc.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\CMakeFiles\fa18c9b97d41518a142f8d90a481893f\ALL_BUILD.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/CMakeFiles/fa18c9b97d41518a142f8d90a481893f/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/CMakeFiles/fa18c9b97d41518a142f8d90a481893f/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/CMakeFiles/fa18c9b97d41518a142f8d90a481893f/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/CMakeFiles/fa18c9b97d41518a142f8d90a481893f/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\ALL_BUILD" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/caffe.vcxproj">
+      <Project>C5DB8213-FE82-48C3-AF44-15E63CCF5123</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/caffe_cu.vcxproj">
+      <Project>39622DD5-8B87-42F8-B88F-CD4EF5871F7E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/proto/proto.vcxproj">
+      <Project>68900EB5-8992-466C-BCA0-5EDE8C1F1D64</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_all.test.vcxproj">
+      <Project>BBD7A663-472B-4820-BE4F-1142BFD48C98</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_argmax_layer.test.vcxproj">
+      <Project>97FBDC2D-0DA5-4343-A149-19F6B7D4BEE6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_benchmark.test.vcxproj">
+      <Project>483B2AC9-86E7-4D6D-AFB5-F883BCB560DA</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_blob.test.vcxproj">
+      <Project>905B2F56-94C7-4C73-90FC-334AA3542FB1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_caffe_main.test.vcxproj">
+      <Project>A5766FD7-332E-4315-8D90-A15C6DC56D01</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_common.test.vcxproj">
+      <Project>CE0CCA41-AA17-4F95-9AC0-9FDCE7A26897</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_concat_layer.test.vcxproj">
+      <Project>CA07C967-84E3-4674-B827-AC83909AAB27</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_convolution_layer.test.vcxproj">
+      <Project>DF305AEE-1CB7-4733-935F-18B50ABAE3F5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_data_layer.test.vcxproj">
+      <Project>53C7F9A9-D401-40D2-8210-84DA1F192615</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_eltwise_layer.test.vcxproj">
+      <Project>A548FD65-BAC8-4BA8-B861-397A52A5D03C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_euclidean_loss_layer.test.vcxproj">
+      <Project>F8DB86D0-FEF7-4B5F-ADED-44F6E41AE022</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_filler.test.vcxproj">
+      <Project>7B78A66D-1E15-472B-80E3-8D7E61498698</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_flatten_layer.test.vcxproj">
+      <Project>F7A438CE-EC3C-4449-BA2B-CAEA42E9FC6F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_hdf5_output_layer.test.vcxproj">
+      <Project>254F7AB3-9361-4433-A043-CCD6839C4461</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_hdf5data_layer.test.vcxproj">
+      <Project>EA45F7F4-B9DC-4DBB-89D8-462513262F36</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_hinge_loss_layer.test.vcxproj">
+      <Project>E749B933-C714-4F58-AA83-3E03767210A2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_im2col_layer.test.vcxproj">
+      <Project>7EF0E0EE-2C2D-4818-A4DA-F4DA41045516</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_image_data_layer.test.vcxproj">
+      <Project>60FB7D3C-1F77-48B8-812A-7F8D7E92FA3B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_inner_product_layer.test.vcxproj">
+      <Project>B8001D22-93EB-4458-BBA6-A194943794F3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_lrn_layer.test.vcxproj">
+      <Project>3DF18FD5-ED28-48F0-B1D4-1276C254FEA0</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_math_functions.test.vcxproj">
+      <Project>0BF4C29C-C360-44EF-B3E7-341DA3EA6552</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_maxpool_dropout_layers.test.vcxproj">
+      <Project>424CA919-616A-4534-8999-A0973FB7AB51</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_memory_data_layer.test.vcxproj">
+      <Project>3F4253FD-89E9-43BD-866A-B56AD4004D32</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_multinomial_logistic_loss_layer.test.vcxproj">
+      <Project>CF9F3DE8-51EF-4452-9598-ED6210262E88</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_net.test.vcxproj">
+      <Project>87E2BFBE-21D8-4F1C-A4C3-B223CAEF5519</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_neuron_layer.test.vcxproj">
+      <Project>4A4F695F-FC90-4F4F-89D8-E385259899DE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_platform.test.vcxproj">
+      <Project>F02E5DAE-7C30-4BB8-A063-8372AA8D52B6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_pooling_layer.test.vcxproj">
+      <Project>440CB031-27F6-4D47-BF35-732A46B11946</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_power_layer.test.vcxproj">
+      <Project>C0D67A67-07B2-4ADE-9885-345060A4A4B6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_protobuf.test.vcxproj">
+      <Project>689F96D8-71E2-4F9E-A8FC-5ADDC04F54FB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_random_number_generator.test.vcxproj">
+      <Project>240C5EAE-10A4-4302-B3C5-FD8A6CB1A55E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_sigmoid_cross_entropy_loss_layer.test.vcxproj">
+      <Project>024ED06B-8794-4031-A2CC-B7827BE874A8</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_softmax_layer.test.vcxproj">
+      <Project>39E7CCDE-C38A-4DBB-A0DB-3ED670C7F9D6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_softmax_with_loss_layer.test.vcxproj">
+      <Project>05C34DAE-9254-41EA-91BA-25D60A29FCFA</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_split_layer.test.vcxproj">
+      <Project>54F162EE-9EDD-43B5-886D-472F9DC5F622</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_stochastic_pooling.test.vcxproj">
+      <Project>967C7335-9EDA-49A6-8814-91A969C73FDF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_syncedmem.test.vcxproj">
+      <Project>E2442ADE-2077-4B01-BF4B-A64469E7AE26</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_tanh_layer.test.vcxproj">
+      <Project>53B79BD3-8150-4E9A-8AF9-3623F9D2F703</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_threshold_layer.test.vcxproj">
+      <Project>AA961A78-58D9-4BEC-93DC-AEADD4C987E1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_upgrade_proto.test.vcxproj">
+      <Project>6F9E8EEC-ED38-4152-8CD7-BB876B6F8331</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/test_util_blas.test.vcxproj">
+      <Project>681B162F-DA34-4800-9A0B-2E52A3E06433</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{628F370E-6406-4304-8131-01C725686568}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/include;C:/Program Files/HDF Group/HDF5/1.8.9/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include/opencv;C:/Users/t-ahmeb/Downloads/kkowalczyk-leveldb-6f9f0bca2016/kkowalczyk-leveldb-6f9f0bca2016/include;C:/local/boost_1_55_0;C:/Users/t-ahmeb/Downloads/protobuf-2.5.0/protobuf-2.5.0/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/include;C:/Program Files/HDF Group/HDF5/1.8.9/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include/opencv;C:/Users/t-ahmeb/Downloads/kkowalczyk-leveldb-6f9f0bca2016/kkowalczyk-leveldb-6f9f0bca2016/include;C:/local/boost_1_55_0;C:/Users/t-ahmeb/Downloads/protobuf-2.5.0/protobuf-2.5.0/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/include;C:/Program Files/HDF Group/HDF5/1.8.9/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include/opencv;C:/Users/t-ahmeb/Downloads/kkowalczyk-leveldb-6f9f0bca2016/kkowalczyk-leveldb-6f9f0bca2016/include;C:/local/boost_1_55_0;C:/Users/t-ahmeb/Downloads/protobuf-2.5.0/protobuf-2.5.0/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/include;C:/Program Files/HDF Group/HDF5/1.8.9/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include/opencv;C:/Users/t-ahmeb/Downloads/kkowalczyk-leveldb-6f9f0bca2016/kkowalczyk-leveldb-6f9f0bca2016/include;C:/local/boost_1_55_0;C:/Users/t-ahmeb/Downloads/protobuf-2.5.0/protobuf-2.5.0/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\src\caffe\proto\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src/caffe/proto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake -BC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final --check-stamp-file C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\proto\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src/caffe/proto/CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\proto\CMakeLists.txt;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindProtobuf.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\proto\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\proto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src/caffe/proto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake -BC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final --check-stamp-file C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\proto\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src/caffe/proto/CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\proto\CMakeLists.txt;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindProtobuf.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\proto\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\proto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src/caffe/proto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake -BC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final --check-stamp-file C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\proto\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src/caffe/proto/CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\proto\CMakeLists.txt;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindProtobuf.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\proto\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\proto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src/caffe/proto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake -BC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final --check-stamp-file C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\proto\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src/caffe/proto/CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\proto\CMakeLists.txt;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindProtobuf.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeParseArguments.cmake;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\proto\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\proto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\CMakeFiles\ed518022b316e41948c555218f24596d\ALL_BUILD.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/CMakeFiles/ed518022b316e41948c555218f24596d/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\proto\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/CMakeFiles/ed518022b316e41948c555218f24596d/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\proto\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/CMakeFiles/ed518022b316e41948c555218f24596d/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\proto\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/CMakeFiles/ed518022b316e41948c555218f24596d/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\proto\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\ALL_BUILD" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/proto/proto.vcxproj">
+      <Project>68900EB5-8992-466C-BCA0-5EDE8C1F1D64</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

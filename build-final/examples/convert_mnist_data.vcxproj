@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{AEC6010F-8D2A-4C06-88DB-EA84523D919B}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>convert_mnist_data</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Import Project="..\tools\CaffeBuild.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="..\tools\CaffeBuild.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="..\tools\CaffeBuild.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Import Project="..\tools\CaffeBuild.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\examples\mnist\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">convert_mnist_data.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">convert_mnist_data</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\tools\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">convert_mnist_data.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">convert_mnist_data</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\examples\mnist\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">convert_mnist_data.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">convert_mnist_data</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\examples\mnist\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">convert_mnist_data.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">convert_mnist_data</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/examples/mnist/Debug/convert_mnist_data.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\lib\Debug\caffe.lib;..\src\caffe\Debug\caffe_cu.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\lib\x64\cudart.lib;..\src\caffe\proto\Debug\proto.lib;C:\Users\t-ahmeb\Downloads\protobuf-2.5.0\protobuf-2.5.0\vsprojects\Debug\libprotobuf.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\lib\x64\curand.lib;C:\Program Files\HDF Group\HDF5\1.8.9\lib\hdf5_hl.lib;C:\Users\t-ahmeb\Downloads\caffe-cmake\x64\vc11\lib\opencv_highgui248d.lib;C:\Users\t-ahmeb\Downloads\caffe-cmake\x64\vc11\lib\opencv_imgproc248d.lib;C:\Users\t-ahmeb\Downloads\caffe-cmake\x64\vc11\lib\opencv_core248d.lib;C:\Users\t-ahmeb\Downloads\kkowalczyk-leveldb-6f9f0bca2016\kkowalczyk-leveldb-6f9f0bca2016\lib\leveldb.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\lib\x64\cublas.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/examples/Debug/convert_mnist_data.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/examples/mnist/Debug/convert_mnist_data.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;/Ox;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/examples/mnist/Release/convert_mnist_data.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;/Ox;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/examples/Release/convert_mnist_data.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/examples/mnist/Release/convert_mnist_data.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>MinSizeRel</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/examples/mnist/MinSizeRel/convert_mnist_data.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\lib\MinSizeRel\caffe.lib;..\src\caffe\MinSizeRel\caffe_cu.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\lib\x64\cudart.lib;..\src\caffe\proto\MinSizeRel\proto.lib;C:\Users\t-ahmeb\Downloads\protobuf-2.5.0\protobuf-2.5.0\vsprojects\Release\libprotobuf.lib;..\..\3rdparty\lib\libglog.lib;C:\Program Files\HDF Group\HDF5\1.8.9\lib\hdf5_hl.lib;C:\Users\t-ahmeb\Downloads\caffe-cmake\x64\vc11\lib\opencv_highgui248d.lib;C:\Users\t-ahmeb\Downloads\caffe-cmake\x64\vc11\lib\opencv_imgproc248d.lib;C:\Users\t-ahmeb\Downloads\caffe-cmake\x64\vc11\lib\opencv_core248d.lib;C:\Users\t-ahmeb\Downloads\kkowalczyk-leveldb-6f9f0bca2016\kkowalczyk-leveldb-6f9f0bca2016\lib\leveldb.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\lib\x64\cublas.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/examples/MinSizeRel/convert_mnist_data.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/examples/mnist/MinSizeRel/convert_mnist_data.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>RelWithDebInfo</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/examples/mnist/RelWithDebInfo/convert_mnist_data.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\lib\RelWithDebInfo\caffe.lib;..\src\caffe\RelWithDebInfo\caffe_cu.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\lib\x64\cudart.lib;..\src\caffe\proto\RelWithDebInfo\proto.lib;C:\Users\t-ahmeb\Downloads\protobuf-2.5.0\protobuf-2.5.0\vsprojects\Release\libprotobuf.lib;..\..\3rdparty\lib\libglog.lib;C:\Program Files\HDF Group\HDF5\1.8.9\lib\hdf5_hl.lib;C:\Users\t-ahmeb\Downloads\caffe-cmake\x64\vc11\lib\opencv_highgui248d.lib;C:\Users\t-ahmeb\Downloads\caffe-cmake\x64\vc11\lib\opencv_imgproc248d.lib;C:\Users\t-ahmeb\Downloads\caffe-cmake\x64\vc11\lib\opencv_core248d.lib;C:\Users\t-ahmeb\Downloads\kkowalczyk-leveldb-6f9f0bca2016\kkowalczyk-leveldb-6f9f0bca2016\lib\leveldb.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\lib\x64\cublas.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/examples/RelWithDebInfo/convert_mnist_data.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/examples/mnist/RelWithDebInfo/convert_mnist_data.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\examples\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake -BC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final --check-stamp-file C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\examples\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/examples/CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\examples\CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake -BC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final --check-stamp-file C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\examples\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/examples/CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\examples\CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake -BC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final --check-stamp-file C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\examples\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/examples/CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\examples\CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake -BC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final --check-stamp-file C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\examples\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/examples/CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\examples\CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\examples\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\examples\mnist\convert_mnist_data.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/caffe.vcxproj">
+      <Project>C5DB8213-FE82-48C3-AF44-15E63CCF5123</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/caffe_cu.vcxproj">
+      <Project>39622DD5-8B87-42F8-B88F-CD4EF5871F7E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/proto/proto.vcxproj">
+      <Project>68900EB5-8992-466C-BCA0-5EDE8C1F1D64</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

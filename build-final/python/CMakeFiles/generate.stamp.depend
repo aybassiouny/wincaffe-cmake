@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/python/CMakeLists.txt
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindPythonLibs.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeFindFrameworks.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/SelectLibraryConfigurations.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/CMakeParseArguments.cmake
+C:/Program Files (x86)/CMake 2.8/share/cmake-2.8/Modules/FindBoost.cmake
