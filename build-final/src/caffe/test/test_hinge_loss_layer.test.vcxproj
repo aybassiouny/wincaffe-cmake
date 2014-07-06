@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{E749B933-C714-4F58-AA83-3E03767210A2}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>test_hinge_loss_layer.test</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\test\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">test_hinge_loss_layer.test.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">test_hinge_loss_layer.test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\test\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">test_hinge_loss_layer.test.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">test_hinge_loss_layer.test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\test\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">test_hinge_loss_layer.test.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">test_hinge_loss_layer.test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\test\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">test_hinge_loss_layer.test.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">test_hinge_loss_layer.test</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/include;C:/Program Files/HDF Group/HDF5/1.8.9/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include/opencv;C:/Users/t-ahmeb/Downloads/kkowalczyk-leveldb-6f9f0bca2016/kkowalczyk-leveldb-6f9f0bca2016/include;C:/local/boost_1_55_0;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_BUILD;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/test/Debug/test_hinge_loss_layer.test.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_BUILD;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/include;C:/Program Files/HDF Group/HDF5/1.8.9/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include/opencv;C:/Users/t-ahmeb/Downloads/kkowalczyk-leveldb-6f9f0bca2016/kkowalczyk-leveldb-6f9f0bca2016/include;C:/local/boost_1_55_0;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/include;C:/Program Files/HDF Group/HDF5/1.8.9/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include/opencv;C:/Users/t-ahmeb/Downloads/kkowalczyk-leveldb-6f9f0bca2016/kkowalczyk-leveldb-6f9f0bca2016/include;C:/local/boost_1_55_0;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\gtest\Debug\gtest.lib;..\..\..\lib\Debug\caffe.lib;..\Debug\caffe_cu.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\lib\x64\cudart.lib;..\proto\Debug\proto.lib;C:\Users\t-ahmeb\Downloads\protobuf-2.5.0\protobuf-2.5.0\vsprojects\Debug\libprotobuf.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\lib\x64\curand.lib;C:\Program Files\HDF Group\HDF5\1.8.9\lib\hdf5_hl.lib;C:\Users\t-ahmeb\Downloads\caffe-cmake\x64\vc11\lib\opencv_highgui248d.lib;C:\Users\t-ahmeb\Downloads\caffe-cmake\x64\vc11\lib\opencv_imgproc248d.lib;C:\Users\t-ahmeb\Downloads\caffe-cmake\x64\vc11\lib\opencv_core248d.lib;C:\Users\t-ahmeb\Downloads\kkowalczyk-leveldb-6f9f0bca2016\kkowalczyk-leveldb-6f9f0bca2016\lib\leveldb.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\lib\x64\cublas.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/local/boost_1_55_0/lib64-msvc-11.0;C:/local/boost_1_55_0/lib64-msvc-11.0/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/Debug/test_hinge_loss_layer.test.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/test/Debug/test_hinge_loss_layer.test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/include;C:/Program Files/HDF Group/HDF5/1.8.9/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include/opencv;C:/Users/t-ahmeb/Downloads/kkowalczyk-leveldb-6f9f0bca2016/kkowalczyk-leveldb-6f9f0bca2016/include;C:/local/boost_1_55_0;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;/Ox;CMAKE_BUILD;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/test/Release/test_hinge_loss_layer.test.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;/Ox;CMAKE_BUILD;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/include;C:/Program Files/HDF Group/HDF5/1.8.9/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include/opencv;C:/Users/t-ahmeb/Downloads/kkowalczyk-leveldb-6f9f0bca2016/kkowalczyk-leveldb-6f9f0bca2016/include;C:/local/boost_1_55_0;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/include;C:/Program Files/HDF Group/HDF5/1.8.9/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include/opencv;C:/Users/t-ahmeb/Downloads/kkowalczyk-leveldb-6f9f0bca2016/kkowalczyk-leveldb-6f9f0bca2016/include;C:/local/boost_1_55_0;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\gtest\Release\gtest.lib;..\..\..\lib\Release\caffe.lib;..\Release\caffe_cu.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\lib\x64\cudart.lib;..\proto\Release\proto.lib;C:\Users\t-ahmeb\Downloads\protobuf-2.5.0\protobuf-2.5.0\vsprojects\Release\libprotobuf.lib;..\..\..\..\3rdparty\lib\libglog.lib;C:\Program Files\HDF Group\HDF5\1.8.9\lib\hdf5_hl.lib;C:\Users\t-ahmeb\Downloads\caffe-cmake\x64\vc11\lib\opencv_highgui248.lib;C:\Users\t-ahmeb\Downloads\caffe-cmake\x64\vc11\lib\opencv_imgproc248.lib;C:\Users\t-ahmeb\Downloads\caffe-cmake\x64\vc11\lib\opencv_core248.lib;C:\Users\t-ahmeb\Downloads\kkowalczyk-leveldb-6f9f0bca2016\kkowalczyk-leveldb-6f9f0bca2016\lib\leveldb.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\lib\x64\cublas.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/local/boost_1_55_0/lib64-msvc-11.0;C:/local/boost_1_55_0/lib64-msvc-11.0/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/Release/test_hinge_loss_layer.test.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/test/Release/test_hinge_loss_layer.test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/include;C:/Program Files/HDF Group/HDF5/1.8.9/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include/opencv;C:/Users/t-ahmeb/Downloads/kkowalczyk-leveldb-6f9f0bca2016/kkowalczyk-leveldb-6f9f0bca2016/include;C:/local/boost_1_55_0;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_BUILD;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>MinSizeRel</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/test/MinSizeRel/test_hinge_loss_layer.test.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_BUILD;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/include;C:/Program Files/HDF Group/HDF5/1.8.9/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include/opencv;C:/Users/t-ahmeb/Downloads/kkowalczyk-leveldb-6f9f0bca2016/kkowalczyk-leveldb-6f9f0bca2016/include;C:/local/boost_1_55_0;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/include;C:/Program Files/HDF Group/HDF5/1.8.9/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include/opencv;C:/Users/t-ahmeb/Downloads/kkowalczyk-leveldb-6f9f0bca2016/kkowalczyk-leveldb-6f9f0bca2016/include;C:/local/boost_1_55_0;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\gtest\MinSizeRel\gtest.lib;..\..\..\lib\MinSizeRel\caffe.lib;..\MinSizeRel\caffe_cu.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\lib\x64\cudart.lib;..\proto\MinSizeRel\proto.lib;C:\Users\t-ahmeb\Downloads\protobuf-2.5.0\protobuf-2.5.0\vsprojects\Release\libprotobuf.lib;..\..\..\..\3rdparty\lib\libglog.lib;C:\Program Files\HDF Group\HDF5\1.8.9\lib\hdf5_hl.lib;C:\Users\t-ahmeb\Downloads\caffe-cmake\x64\vc11\lib\opencv_highgui248d.lib;C:\Users\t-ahmeb\Downloads\caffe-cmake\x64\vc11\lib\opencv_imgproc248d.lib;C:\Users\t-ahmeb\Downloads\caffe-cmake\x64\vc11\lib\opencv_core248d.lib;C:\Users\t-ahmeb\Downloads\kkowalczyk-leveldb-6f9f0bca2016\kkowalczyk-leveldb-6f9f0bca2016\lib\leveldb.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\lib\x64\cublas.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/local/boost_1_55_0/lib64-msvc-11.0;C:/local/boost_1_55_0/lib64-msvc-11.0/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/MinSizeRel/test_hinge_loss_layer.test.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/test/MinSizeRel/test_hinge_loss_layer.test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/include;C:/Program Files/HDF Group/HDF5/1.8.9/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include/opencv;C:/Users/t-ahmeb/Downloads/kkowalczyk-leveldb-6f9f0bca2016/kkowalczyk-leveldb-6f9f0bca2016/include;C:/local/boost_1_55_0;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_BUILD;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>RelWithDebInfo</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/test/RelWithDebInfo/test_hinge_loss_layer.test.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_BUILD;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/include;C:/Program Files/HDF Group/HDF5/1.8.9/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include/opencv;C:/Users/t-ahmeb/Downloads/kkowalczyk-leveldb-6f9f0bca2016/kkowalczyk-leveldb-6f9f0bca2016/include;C:/local/boost_1_55_0;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/include;C:/Program Files/HDF Group/HDF5/1.8.9/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/3rdparty/lib/include/opencv;C:/Users/t-ahmeb/Downloads/kkowalczyk-leveldb-6f9f0bca2016/kkowalczyk-leveldb-6f9f0bca2016/include;C:/local/boost_1_55_0;C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\gtest\RelWithDebInfo\gtest.lib;..\..\..\lib\RelWithDebInfo\caffe.lib;..\RelWithDebInfo\caffe_cu.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\lib\x64\cudart.lib;..\proto\RelWithDebInfo\proto.lib;C:\Users\t-ahmeb\Downloads\protobuf-2.5.0\protobuf-2.5.0\vsprojects\Release\libprotobuf.lib;..\..\..\..\3rdparty\lib\libglog.lib;C:\Program Files\HDF Group\HDF5\1.8.9\lib\hdf5_hl.lib;C:\Users\t-ahmeb\Downloads\caffe-cmake\x64\vc11\lib\opencv_highgui248d.lib;C:\Users\t-ahmeb\Downloads\caffe-cmake\x64\vc11\lib\opencv_imgproc248d.lib;C:\Users\t-ahmeb\Downloads\caffe-cmake\x64\vc11\lib\opencv_core248d.lib;C:\Users\t-ahmeb\Downloads\kkowalczyk-leveldb-6f9f0bca2016\kkowalczyk-leveldb-6f9f0bca2016\lib\leveldb.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\lib\x64\cublas.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/local/boost_1_55_0/lib64-msvc-11.0;C:/local/boost_1_55_0/lib64-msvc-11.0/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/test/RelWithDebInfo/test_hinge_loss_layer.test.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/test/RelWithDebInfo/test_hinge_loss_layer.test.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\src\caffe\test\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src/caffe/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake -BC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final --check-stamp-file C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\test\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src/caffe/test/CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\test\CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\test\cmake_test_defines.hpp.in;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\test\test_data\sample_data_list.txt.in;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src/caffe/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake -BC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final --check-stamp-file C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\test\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src/caffe/test/CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\test\CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\test\cmake_test_defines.hpp.in;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\test\test_data\sample_data_list.txt.in;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src/caffe/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake -BC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final --check-stamp-file C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\test\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src/caffe/test/CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\test\CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\test\cmake_test_defines.hpp.in;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\test\test_data\sample_data_list.txt.in;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src/caffe/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake -BC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final --check-stamp-file C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\test\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/src/caffe/test/CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\test\CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\test\cmake_test_defines.hpp.in;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\test\test_data\sample_data_list.txt.in;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\src\caffe\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\src\caffe\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\caffe\test\test_caffe_main.cpp" />
+    <ClCompile Include="..\..\..\..\src\caffe\test\test_hinge_loss_layer.cpp" />
+    <ClCompile Include="..\..\..\..\src\caffe\blob.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/ZERO_CHECK.vcxproj">
+      <Project>CE015430-D4FD-4290-9EBD-4C488DB5CA5E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/caffe.vcxproj">
+      <Project>C5DB8213-FE82-48C3-AF44-15E63CCF5123</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/caffe_cu.vcxproj">
+      <Project>39622DD5-8B87-42F8-B88F-CD4EF5871F7E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/proto/proto.vcxproj">
+      <Project>68900EB5-8992-466C-BCA0-5EDE8C1F1D64</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
