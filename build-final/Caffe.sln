@@ -112,6 +112,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "upgrade_net_proto_text", "t
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "compute-image-mean", "tools\compute-image-mean.vcxproj", "{158B4AFD-68CB-4A89-B28D-275051E5F6DB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C5DB8213-FE82-48C3-AF44-15E63CCF5123} = {C5DB8213-FE82-48C3-AF44-15E63CCF5123}
+		{68900EB5-8992-466C-BCA0-5EDE8C1F1D64} = {68900EB5-8992-466C-BCA0-5EDE8C1F1D64}
+		{39622DD5-8B87-42F8-B88F-CD4EF5871F7E} = {39622DD5-8B87-42F8-B88F-CD4EF5871F7E}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
