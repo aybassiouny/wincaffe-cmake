@@ -4,6 +4,7 @@
 # User-specific files
 *.suo
 *.user
+*.deps
 *.sln.docstates
 3rdparty/
 # Build results
