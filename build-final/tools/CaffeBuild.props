@@ -9,7 +9,7 @@
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>../../3rdparty/lib;$(BOOST_ROOT)\lib64-msvc-11.0;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libprotoc.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\src\caffe\release\caffe_cu.lib;..\lib\Release\caffe.lib;$(CUDA_DIR)\lib\x64\cudart.lib;..\src\caffe\proto\Release\proto.lib;libprotobuf.lib;libglog.lib;$(HDF5_DIR)\lib\hdf5_hl.lib;$(HDF5_DIR)\lib\hdf5.lib;$(HDF5_DIR)\lib\hdf5_tools.lib;$(HDF5_DIR)\lib\libzlib.lib;$(HDF5_DIR)\lib\libszip.lib;opencv_highgui248.lib;opencv_imgproc248.lib;opencv_core248.lib;leveldb.lib;shlwapi.lib;libgsl-0.lib;libgslcblas-0.lib;cublas.lib;cublas_device.lib;curand.lib;cudart.lib;cuda.lib;..\..\build-final\src\caffe\proto\Release\proto.lib</AdditionalDependencies>
+      <AdditionalDependencies>libprotoc.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\src\caffe\release\caffe_cu.lib;..\lib\Release\caffe.lib;$(CUDA_DIR)\lib\x64\cudart.lib;..\src\caffe\proto\Release\proto.lib;libprotobuf.lib;libglog.lib;$(HDF5_DIR)\lib\hdf5_hl.lib;$(HDF5_DIR)\lib\hdf5.lib;$(HDF5_DIR)\lib\hdf5_tools.lib;$(HDF5_DIR)\lib\libzlib.lib;$(HDF5_DIR)\lib\libszip.lib;opencv_highgui248.lib;opencv_imgproc248.lib;opencv_core248.lib;leveldb.lib;shlwapi.lib;libgsl-0.lib;libgslcblas-0.lib;$(CUDA_DIR)\lib\x64\cublas.lib;$(CUDA_DIR)\lib\x64\cublas_device.lib;$(CUDA_DIR)\lib\x64\curand.lib;$(CUDA_DIR)\lib\x64\cuda.lib;..\..\build-final\src\caffe\proto\Release\proto.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup />

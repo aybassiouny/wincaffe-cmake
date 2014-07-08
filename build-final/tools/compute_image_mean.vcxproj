@@ -181,7 +181,7 @@
       <Version>
       </Version>
       <AdditionalLibraryDirectories>$(MATLAB_ROOT)\extern\lib\win64\microsoft;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libmx.lib;libmex.lib;libmat.lib;libprotoc.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\src\caffe\release\caffe_cu.lib;..\lib\Release\caffe.lib;$(CUDA_DIR)\lib\x64\cudart.lib;..\src\caffe\proto\Release\proto.lib;libprotobuf.lib;libglog.lib;$(HDF5_DIR)\lib\hdf5_hl.lib;$(HDF5_DIR)\lib\hdf5.lib;$(HDF5_DIR)\lib\hdf5_tools.lib;$(HDF5_DIR)\lib\libzlib.lib;$(HDF5_DIR)\lib\libszip.lib;opencv_highgui248.lib;opencv_imgproc248.lib;opencv_core248.lib;leveldb.lib;shlwapi.lib;libgsl-0.lib;libgslcblas-0.lib;cublas.lib;cublas_device.lib;curand.lib;cudart.lib;cuda.lib</AdditionalDependencies>
+      <AdditionalDependencies>libmx.lib;libmex.lib;libmat.lib;libprotoc.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\src\caffe\release\caffe_cu.lib;..\lib\Release\caffe.lib;$(CUDA_DIR)\lib\x64\cudart.lib;..\src\caffe\proto\Release\proto.lib;libprotobuf.lib;libglog.lib;$(HDF5_DIR)\lib\hdf5_hl.lib;$(HDF5_DIR)\lib\hdf5.lib;$(HDF5_DIR)\lib\hdf5_tools.lib;$(HDF5_DIR)\lib\libzlib.lib;$(HDF5_DIR)\lib\libszip.lib;opencv_highgui248.lib;opencv_imgproc248.lib;opencv_core248.lib;leveldb.lib;shlwapi.lib;libgsl-0.lib;libgslcblas-0.lib;$(CUDA_DIR)\lib\x64\cublas.lib;$(CUDA_DIR)\lib\x64\cublas_device.lib;$(CUDA_DIR)\lib\x64\curand.lib;$(CUDA_DIR)\lib\x64\cuda.lib</AdditionalDependencies>
     </Link>
     <ProjectReference>
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
@@ -276,62 +276,6 @@
       <LinkLibraryDependencies>false</LinkLibraryDependencies>
     </ProjectReference>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <CustomBuild Include="..\..\tools\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/tools/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake -BC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final --check-stamp-file C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\tools\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/tools/CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\tools\CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\tools\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\tools\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/tools/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake -BC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final --check-stamp-file C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\tools\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/tools/CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\tools\CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\tools\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\tools\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/tools/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake -BC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final --check-stamp-file C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\tools\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/tools/CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\tools\CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\tools\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\tools\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/tools/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake -BC:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final --check-stamp-file C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\tools\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/tools/CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\tools\CMakeLists.txt;C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\tools\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\t-ahmeb\Downloads\caffe-cmake\caffe-cmake\build-final\tools\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
-    </CustomBuild>
-  </ItemGroup>
   <ItemGroup>
     <ClCompile Include="matcaffe.cpp" />
   </ItemGroup>

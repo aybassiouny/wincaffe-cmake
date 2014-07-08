@@ -6,9 +6,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="..\..\python\CMakeLists.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <Filter Include="Source Files">
       <UniqueIdentifier>{52B61437-C31F-4CD5-A690-D612460BAB9E}</UniqueIdentifier>
     </Filter>
