@@ -82,7 +82,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <TargetName>compute_image_mean</TargetName>
-    <OutDir>..\..\..\tools\Release\</OutDir>
+    <OutDir>..\..\tools\Release\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
