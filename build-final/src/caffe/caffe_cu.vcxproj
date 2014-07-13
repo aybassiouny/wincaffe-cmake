@@ -146,6 +146,7 @@ cd %origin_dir%</Command>
     <CudaCompile>
       <TargetMachinePlatform>64</TargetMachinePlatform>
       <CodeGeneration>compute_35,sm_35</CodeGeneration>
+      <Include>../../../include;../../../src;$(CUDA_DIR)/include;../../../3rdparty/include;$(BOOST_DIR);$(HDF5_DIR)\include;%(AdditionalIncludeDirectories)</Include>
     </CudaCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">

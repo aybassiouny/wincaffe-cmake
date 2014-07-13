@@ -5,7 +5,7 @@
   <PropertyGroup />
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>../../include;../../src;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v5.5/include;../../3rdparty/include;$(HDF5_DIR)/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../include;../../src;$(CUDA_DIR)/include;../../3rdparty/include;$(HDF5_DIR)/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>../../3rdparty/lib;$(BOOST_ROOT)\lib64-msvc-11.0;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
