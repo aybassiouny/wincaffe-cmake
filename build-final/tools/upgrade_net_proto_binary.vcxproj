@@ -173,7 +173,7 @@
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImportLibrary>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/tools/Release/upgrade_net_proto_binary.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/tools/Release/upgrade_net_proto_binary.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>

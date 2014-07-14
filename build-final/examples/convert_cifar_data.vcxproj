@@ -173,7 +173,7 @@
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <ImportLibrary>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/examples/Release/convert_cifar_data.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/examples/cifar10/Release/convert_cifar_data.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>$(OutDir)$(TargetName).pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
