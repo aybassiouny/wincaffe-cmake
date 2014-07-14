@@ -175,7 +175,8 @@
     <Link>
       <AdditionalOptions> /machine:x64 /export:mexFunction %(AdditionalOptions)</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <ImportLibrary>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/tools/Release/compute_image_mean.lib</ImportLibrary>
+      <ImportLibrary>
+      </ImportLibrary>
       <ProgramDataBaseFile>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/tools/Release/compute_image_mean.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
