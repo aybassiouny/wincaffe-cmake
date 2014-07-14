@@ -143,7 +143,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;/Ox;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>Release</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ProgramDataBaseFileName>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/src/caffe/proto/Release/proto.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;/Ox;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>

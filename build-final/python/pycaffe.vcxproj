@@ -155,7 +155,7 @@
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;/Ox;CMAKE_INTDIR="Release";pycaffe_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>Release</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ProgramDataBaseFileName>C:/Users/t-ahmeb/Downloads/caffe-cmake/caffe-cmake/build-final/python/Release/pycaffe.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
       <AdditionalIncludeDirectories>$(BOOST_ROOT);$(PYTHON_DIR)/include;$(PYTHON_DIR)\Lib\site-packages\numpy\core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ResourceCompile>
